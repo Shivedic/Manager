@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.digitalhomeland.storemanager">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <activity android:name=".DashboardActivity"></activity>
+        <activity android:name=".LandingActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".ApplicationNotifViewActivity" />
+        <activity android:name=".CreateTask" />
+
+        <receiver
+            android:name=".Mote"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":remote" />
+
+        <activity android:name=".AttendanceActivity" />
+        <activity android:name=".ApplicationViewActivity" />
+        <activity android:name=".CreateNotifActivity" />
+        <activity android:name=".AddEmployee" />
+        <activity android:name=".UpdateRoster" />
+        <activity android:name=".StoreRoster" />
+        <activity android:name=".UpdateEmpRoster" />
+        <activity android:name=".NotifDashboard" />
+        <activity android:name=".AppliDashboard" />
+        <activity android:name=".RosterDasboard" />
+        <activity android:name=".TaskDashboard" />
+        <activity android:name=".AttendanceDashboard" />
+        <activity android:name=".StoreDashboard" />
+        <activity android:name=".TaskView" />
+        <activity android:name=".TaskPageViewActivity" />
+        <activity android:name=".ViewAttendance" />
+        <activity android:name=".ViewDailyAttendance" />
+        <activity android:name=".StoreVariables" />
+        <activity android:name=".ViewNotifBList" />
+        <activity android:name=".NotificationView" />
+        <activity android:name=".TodayAttendance" />
+        <activity android:name=".RemoveEmployeeActivity" />
+        <activity android:name=".PreDashboard">
+        </activity>
+    </application>
+
+</manifest>
