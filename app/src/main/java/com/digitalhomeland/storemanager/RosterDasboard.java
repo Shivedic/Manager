@@ -202,6 +202,7 @@ public class RosterDasboard extends AppCompatActivity {
                 for (EmpRoster etr:emprList
                      ) {
                     db.updateEmpRosterPushed(etr);
+                    
                 }
             }
         }catch(Exception e){
